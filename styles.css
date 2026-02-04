@@ -309,7 +309,7 @@ body {
 .hero-bg {
     position: absolute;
     inset: 0;
-    background-image: url('hero-bg.png') no-repeat center center/cover;
+    background: url('hero-bg.png') no-repeat center center/cover;
     /* Optional: Add a fallback color */
     background-color: var(--bg);
     opacity: 1;
@@ -329,6 +329,9 @@ body {
 @media (max-width: 500px){
     .hero-bg-mob{
         background-image: url('mob.png') !important;
+    }
+    .hero-bg{
+        background: none !important;
     }
     .hero-content{
         height: 75%;
