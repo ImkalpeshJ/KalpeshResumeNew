@@ -318,22 +318,28 @@ body {
     transition: opacity 0.3s;
 }
 
-@media (max-width: 1024px){
-    .hero-bg{
-        background-image: url('tab.png') !important;
+@media (max-width: 1024px) {
+    .hero-bg {
+        background-image: url('tab.png');
     }
-    .hero-content{
+
+    .hero-content {
         height: 70%;
     }
 }
-@media (max-width: 500px){
-    .hero-bg-mob{
-        background-image: url('mob.png') !important;
+
+@media (max-width: 500px) {
+    .hero-bg {
+        background-image: url('Mob.png') !important;
+        background-size: cover;
+        background-position: center bottom;
+        /* Or center based on preference, user had center earlier but I moved to bottom center. Keeping consistent or resetting. User snippet used "center" implicit in just setting url. Let's keep position logic if needed or just let it inherit? 
+        The top level .hero-bg has center center/cover.
+        The user snippet for mob.png only set background-image.
+        I will ensure it covers. */
     }
-    .hero-bg{
-        background: none !important;
-    }
-    .hero-content{
+
+    .hero-content {
         height: 75%;
     }
 }
