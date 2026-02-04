@@ -333,7 +333,7 @@ body {
         background-image: url('Mob.png') !important;
         background-size: cover;
         background-position: center bottom;
-        /* Or center based on preference, user had center earlier but I moved to bottom center. Keeping consistent or resetting. User snippet used "center" implicit in just setting url. Let's keep position logic if needed or just let it inherit? 
+        /* Or center based on preference, user had center earlier but I moved to bottom center. Keeping consistent or resetting. User snippet used "center" implicit in just setting url. Let's keep position logic if needed or just let it inherit?
         The top level .hero-bg has center center/cover.
         The user snippet for mob.png only set background-image.
         I will ensure it covers. */
@@ -344,9 +344,15 @@ body {
     }
 }
 
+@media (max-width: 375px) {
+    .hero{
+        min-height: 130vh;
+    }
+}
+
 
 [data-theme="dark"] .hero-bg {
-    /* In dark mode, we might want full opacity or keep it consistent? 
+    /* In dark mode, we might want full opacity or keep it consistent?
        Previous dark mode had opacity: 1. Let's start with 0.6 to blend with dark bg */
     opacity: 0.6;
 }
