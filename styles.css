@@ -334,14 +334,7 @@ body {
         height: 75%;
     }
 }
-@media (max-width: 375px){
-    .hero-bg{
-        background-image: url('SE.png') !important;
-    }
-    .hero-content{
-        height: 40%;
-    }
-}
+
 
 [data-theme="dark"] .hero-bg {
     /* In dark mode, we might want full opacity or keep it consistent? 
