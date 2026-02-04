@@ -318,6 +318,31 @@ body {
     transition: opacity 0.3s;
 }
 
+@media (max-width: 1024px){
+    .hero-bg{
+        background-image: url('tab.png') !important;
+    }
+    .hero-content{
+        height: 70%;
+    }
+}
+@media (max-width: 500px){
+    .hero-bg{
+        background-image: url('mob.png') !important;
+    }
+    .hero-content{
+        height: 75%;
+    }
+}
+@media (max-width: 375px){
+    .hero-bg{
+        background-image: url('SE.png') !important;
+    }
+    .hero-content{
+        height: 40%;
+    }
+}
+
 [data-theme="dark"] .hero-bg {
     /* In dark mode, we might want full opacity or keep it consistent? 
        Previous dark mode had opacity: 1. Let's start with 0.6 to blend with dark bg */
@@ -681,6 +706,7 @@ body {
         right: 0;
     }
 
+
     .hamburger {
         display: block;
         cursor: pointer;
@@ -692,6 +718,34 @@ body {
         height: 3px;
         background: var(--text);
         margin: 5px 0;
+    }
+
+    /* Mobile Hero Background */
+    /* .hero-bg{
+        background-image: url('hero-bg-mob.jpg');
+        background-position: bottom center;
+        background-size: cover;
+    } */
+
+    /* Mobile Typography & Layout */
+    .hero-title {
+        font-size: clamp(32px, 10vw, 48px);
+        line-height: 1.1;
+    }
+
+    .hero-sub {
+        font-size: 1.2rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-cta .btn-primary,
+    .hero-cta .btn-outline {
+        width: 100%;
+        text-align: center;
     }
 }
 
